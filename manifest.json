@@ -1,0 +1,25 @@
+{
+  "name": "phonics-evaluator",
+  "version": "1.0.0",
+  "description": "科大讯飞语音评测工具",
+  "tools": [
+    {
+      "name": "evaluate",
+      "description": "进行英语发音评测，返回分数及纠音建议",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "text": {
+            "type": "string",
+            "description": "待评测的英语单词或句子"
+          },
+          "audio": {
+            "type": "string",
+            "description": "音频文件的Base64编码字符串"
+          }
+        },
+        "required": ["text", "audio"]
+      }
+    }
+  ]
+}
